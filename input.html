@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Irrigation Management Tool</title>
+</head>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background-image: url("https://greencamp.com/wp-content/uploads/2017/09/drip-irrigation.jpg");
+	height: 100%;
+	font-family: Georgia;
+	opacity: 0.95;
+	background-size: cover;
+}
+
+#wrapper {
+	
+	
+	background-color: #ff944d; 
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 20px;
+	
+}
+
+#header{
+ width: 1000px; height: 80px;
+ text-align: center;
+}
+
+#header h1{
+ padding-left:25px;
+ font: 3em georgia, sans-serif;
+}
+
+.redtext{
+ color: #269900;
+}
+input[type=number]{
+  border: none;
+  width: 15%;
+  padding: 10px;
+
+  font-size: 16px;
+}
+input[type=date]{
+  border: none;
+
+  width: 15%;
+  padding: 10px;
+
+  font-size: 16px;
+}
+
+
+
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #1a1aff;
+  color: #ffffff;
+  
+
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+.type1 {
+border: none;
+  width: 15%;
+  padding: 10px;
+
+  font-size: 16px;
+  }
+
+</style>
+<body>
+<center>
+<div id="wrapper">
+		<div id="header">         
+			<h1><span class="redtext"><i>Irrigation </i></span> <span class="word2">Management Tool</span></h1>
+		</div>
+
+		
+<div>		
+<form action="">
+	Zipcode: <input type="number" name="zcode" placeholder="Enter Zip code" required><br><br>
+	Soil type: <select name="stype" class="type1" required>
+		<option value="" disabled selected>Select your option</option>
+		<option value="loam">Loam</option>
+		<option value="clay">Clay</option>
+		<option value="placeholder">Placeholder</option>
+	</select><br><br>
+	Date: <input type="date" name="date" required><br><br>
+	Crop: <select name="crop" class="type1">
+		<option value="" disabled selected>Select your option</option>
+		<option value="corn">Corn</option>
+		<option value="grapes">grapes</option>
+		
+		<option value="soybeans">Soybeans</option>
+	</select><br><Br>
+	Irrigation Type: <select name="itype" class="type1" required>>
+		<option value="" disabled selected>Select your option</option>
+		<option value="surface">Surface</option>
+		<option value="trickle">Trickle</option>
+		<option value="drip">Drip</option>
+	</select><br><br>
+	
+	<input type="submit" value="Submit" class="addBtn">
+</form>
+</div>
+<br><br>
+<!--<div class="mapouter" style= float:right;><div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>-->
+</div>
+</center>
+
+</body>
+</html>
